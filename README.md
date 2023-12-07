@@ -1,6 +1,6 @@
-# Boot Video Randomizer for Steam Deck Running on Windows 10 / Windows 11
+# Boot Video Randomizer for Steam Deck/Windows PC Running on Windows 10 / Windows 11
 
-This is only applicable for Steam Deck running on Windows 10 / Windows 11. \
+This is only applicable for Steam Deck/Windows PC running on Windows 10 / Windows 11. \
 This will play a random video during bootup similar to SteamOS.
 
 > **NOTE**\
@@ -133,16 +133,7 @@ https://user-images.githubusercontent.com/98122529/226190803-8873e038-2c2c-41e3-
 
 Command prompt screen
 
-## if Step B fails
 
-try typing ```Win-PS2EXE``` and on the Source File text box either type the path to the RandomVideo.ps1 OR click the 3 dots \[...] menu to the right of the text box and navigating to the RandomVideo.ps1 file,  then hit compile.
-
-![image](https://i.imgur.com/cGr9SFW.png)
-
-
-![image](https://i.imgur.com/HU3Xb63.png)
-
-Win-PS2EXE GUI Screen, presenting the button you press (3 dots menu\[...])
 
 
 
@@ -153,10 +144,25 @@ Win-PS2EXE GUI Screen, presenting the button you press (3 dots menu\[...])
 
 9. If everything looks good, final step is to set it as the shell. **This is very important. If you make a mistake here Windows might not boot!** \
    a. Open elevated command prompt / run as admin.\
-   b. reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /f /v Shell /t REG_SZ /d "C:\mpv\RandomVideo.exe" \
+   b.
+   ```
+   reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /f /v Shell /t REG_SZ /d "C:\mpv\RandomVideo.exe"
+   ```
 ![image](https://user-images.githubusercontent.com/98122529/226189460-b5a09829-f009-44d8-b61f-a8cd00adc6dd.png)
 
-10. Reboot and enjoy the random boot video!
+11. Reboot and enjoy the random boot video!
+
+
+## if Step 5-B fails
+
+try typing ```Win-PS2EXE``` and on the Source File text box either type the path to the RandomVideo.ps1 OR click the 3 dots \[...] menu to the right of the text box and navigating to the RandomVideo.ps1 file,  then hit compile.
+
+![image](https://i.imgur.com/cGr9SFW.png)
+
+
+![image](https://i.imgur.com/HU3Xb63.png)
+
+Win-PS2EXE GUI Screen, presenting the button you press (3 dots menu\[...])
 
 
 ## Optional - Autohide the taskbar
